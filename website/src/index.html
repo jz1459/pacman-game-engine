@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pac-Man Game Engine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            color: #007bff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header p {
+            color: rgb(0, 0, 0);
+        }
+        section {
+            padding: 1.5rem;
+            margin: 1rem auto;
+            max-width: 800px;
+            background: #fff;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #007bff;
+            margin-bottom: 0.5rem;
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .screenshots img,
+        .engine-architecture img {
+            text-align: center;
+            max-width: 60%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 0.5rem 0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: #fff;
+            background: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Pac-Man Game Engine</h1>
+        <p> CPSC 411: Building Game Engines Final Project (FALL 2024)</p>
+    </header>
+
+    <section class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </section>
+
+    <section class="screenshots">
+        <h2>Game Screenshots</h2>
+        <div class="image-container">
+            <img src="../assets/images/Normal Mode Screenshot.png" alt="Screenshot 1">
+            <img src="../assets/images/Ghost Mode Screenshot.png" alt="Screenshot 2">
+            <img src="../assets/images/Tilemap Editor Screenshot.png" alt="Screenshot 3">
+        </div>
+    </section>
+
+    <section class="documentation">
+        <h2>Documentation</h2>
+        <p>Access the full engine and API documentation</p>
+        <a href="documentation_placeholder/index.html" class="btn">View Documentation</a>
+    </section>
+
+    <section class="engine-architecture">
+        <h2>Engine Architecture</h2>
+        <p>Below is the image representing the architecture of the game engine:</p>
+        <div class = "image-container">
+            <img src="../docs/Engine Architecture.png" alt="Engine Architecture Diagram">
+        </div>
+    </section>
+
+    <section class="binary-link">
+        <h2>Binary Download</h2>
+        <p>Click the link below to download the binary for the game:</p>
+        <a href="../bin/Pac-Man Binary.zip" class="btn">Download Binary</a>
+    </section>
+
+    <section class="post-mortem">
+        <h2>Post Mortem</h2>
+        <p><strong>What went well:</strong> Overall, we were quite proud of our Pac-Man game. We were able to incorporate many of the different object-oriented design patterns 
+        taught within the course, while also taking advantage of a component-based and data-driven architecture. Our codebase was well fleshed-out and is well-equipped for future iterations.
+        </p>
+        <p><strong>What could be improved:</strong> 
+            Given 8 more weeks, we would have fleshed out the Pac-Man's pathfinding abilities to exactly mirror those of the <a href="https://pacman.fandom.com/wiki/Maze_Ghost_AI_Behaviors" target="_blank">original Pac-Man game</a>.
+            We would have loved to be able to incorporate some more uniqueness to our project. Some ideas we had included a boss mode, where there would be a special ghost that had more speed than the others.
+            Others included adding in more unique powerups such as a speed-boost or ghost slow-down. Outside of gameplay specific changes, we would have loved to have more time to flesh our the internal
+            game engine itself. Currently, our tilemap editor only allows for the editing of the scene itself. A future improvement would have been adding in functionality for our editor to take in input files, allowing
+            users to change sprites, animation patterns, font styles, and even different audio sound bites.
+        </p>
+    </section>
+
+</body>
+
+</html>
